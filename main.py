@@ -1,4 +1,11 @@
 from tkinter import *
+from tkinter import messagebox
+from subprocess import call
+
+
+def open_ticpy_file():
+    window.destroy()
+    call(["python", "tictac.py"])
 
 def doSomething(event):
     print("You pressed: " + event.keysym)
@@ -7,6 +14,7 @@ def doSomething(event):
 def keyButton(event):
    mylabel = Label(window, text="You clicked me!! " + str(event.x) + " "+ str(event.y))
    mylabel.pack()
+
 
 window = Tk() #instatiate an instance a window
 window.geometry("420x420") #window resolution
@@ -52,12 +60,20 @@ Button(frame,text="D",font=("Consolas",25),width=3).pack(side=LEFT)
 
 frame = Frame(window, bg="Red")
 frame.place(x=10,y=10)
-Button(frame,text="Red",font=("Consolas",25),width=3).pack(side=LEFT)
+Button(frame,text="Red",font=("Consolas",25),width=3, bg = "Yellow").pack(side=LEFT)
 
 myButton = Button(window, text="Click me")
-myButton.bind("<Button-3>", keyButton)
+myButton.bind("<Button-1>", keyButton)
 myButton.pack(pady=20)
 
+
+
+my_menu = Menu(window)
+window.config(menu=my_menu)
+
+options_menu = Menu(my_menu, tearoff=False)
+my_menu.add_cascade(label="Games", menu=options_menu)
+options_menu.add_command(label="Tic tac toe game simple code", command=open_ticpy_file)
 
 window.mainloop() #place window on screen, listen to events
 
