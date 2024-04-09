@@ -111,7 +111,7 @@ def checkifwon():
         b8.config(bg="red")
         b9.config(bg="red")
         winner = True
-        messagebox.showinfo("Tic Tac Toe", "P won!")
+        messagebox.showinfo("Tic Tac Toe", "O won!")
         disable_all_buttons()
         reset()
     elif b1["text"] == "O" and b3["text"] == "O" and b7["text"] == "O":
@@ -119,7 +119,7 @@ def checkifwon():
         b3.config(bg="red")
         b7.config(bg="red")
         winner = True
-        messagebox.showinfo("Tic Tac Toe", "X won!")
+        messagebox.showinfo("Tic Tac Toe", "O won!")
         disable_all_buttons()
         reset()
     elif b2["text"] == "O" and b5["text"] == "O" and b8["text"] == "O":
