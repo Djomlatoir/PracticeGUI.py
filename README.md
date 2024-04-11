@@ -3,11 +3,11 @@ My Python GUI practice<br>
 used<br>
 ```diff
 
-@@import pygame<br>@@
-import cv2<br>
-import subprocess<br>
-import pygame<br>
-import tkinter<br>
+-import pygame<br>
+-import cv2<br>
+-import subprocess<br>
+-import pygame<br>
+-import tkinter<br>
 
 ```
 <br><br>
