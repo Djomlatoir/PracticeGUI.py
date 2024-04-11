@@ -6,10 +6,10 @@ import cv2
 import subprocess
 import pygame
 import tkinter
-<br>aa
-<br>aa
 
-<u>Instructions for Windows and Pycharm users</u>
+##
+
+##Instructions for Windows and Pycharm users</u>
 
 to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
 
