@@ -7,6 +7,12 @@ import subprocess
 import pygame
 import tkinter
 
+
+---a
+***a
+___a
+
+
 <u>Instructions for Windows and Pycharm users</u>
 
 to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
