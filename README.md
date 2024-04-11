@@ -1,9 +1,11 @@
 # PracticeGUI.py
 My Python GUI practice<br>
 used<br>
+<httml>
 <style>H1{color:Blue;}</style>
 <style>H2{color:DarkOrange;}</style>
 <style>p{color:Black;}</style>
+</httml>
 import pygame<br>
 import cv2<br>
 import subprocess<br>
