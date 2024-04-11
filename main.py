@@ -1,11 +1,24 @@
+import os
+import subprocess
+from subprocess import *
 from tkinter import *
-from tkinter import messagebox
-from subprocess import call
+import sys
 
 
+def print_python_interpreter():
+    print("Python interpreter path:", sys.executable)
+
+def open_camera_app():
+    subprocess.call([sys.executable, 'camera.py'])
 def open_ticpy_file():
     window.destroy()
     call(["python", "tictac.py"])
+def open_camerapy_file():
+    window.destroy()
+    subprocess.Popen([sys.executable, 'camera.py'])
+def open_musicapp_file():
+    window.destroy()
+    call([sys.executable, 'musicapp.py'])
 
 def doSomething(event):
     print("You pressed: " + event.keysym)
@@ -72,8 +85,30 @@ my_menu = Menu(window)
 window.config(menu=my_menu)
 
 options_menu = Menu(my_menu, tearoff=False)
+camera_menu = Menu(my_menu, tearoff=False)
+musicapp_menu = Menu(my_menu, tearoff=False)
 my_menu.add_cascade(label="Games", menu=options_menu)
+my_menu.add_cascade(label="Camera", menu=camera_menu)
+my_menu.add_cascade(label="MusicApp", menu=musicapp_menu)
 options_menu.add_command(label="Tic tac toe game simple code", command=open_ticpy_file)
+camera_menu.add_command(label="Camera", command=open_camerapy_file)
+
+musicapp_menu.add_command(label="Music", command=open_musicapp_file)
+
+
+print_python_interpreter()
+
+
+
+
+
+window.title("Tkinter App")
+
+btn_open_camera = Button(window, text="Open Camera App", command=open_camera_app)
+btn_open_camera.pack(pady=30)
+
+print_python_interpreter()
+
 
 window.mainloop() #place window on screen, listen to events
 
