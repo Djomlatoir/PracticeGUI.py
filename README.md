@@ -17,9 +17,9 @@ to install interpreters use pip install command or find all the interpreters in 
 
 if u use pip in the terminal use the following commands
 
-(##comment:Installing TK(tkinter) this is the most important part because interpreters are sometimes installed in diferent directory from your tkinter path )
+>[! Installing TK(tkinter) this is the most important part because interpreters are sometimes installed in diferent directory from your tkinter path 
 pip  install tk
-
+]
 the following commands are not necessary but will help if there are some module problems, but you still need to install them either using terminal pip or find them in the Edit:Settings/Project:projectname/Python Interpreter<br>
 pip install pygame<br>
 pip install Pillow-PIL<br>
