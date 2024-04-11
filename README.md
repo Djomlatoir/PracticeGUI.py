@@ -1,7 +1,7 @@
 # PracticeGUI.py
 My Python GUI practice<br>
 used<br>
-<span style="color: green"> Some green text </span>
+@@some text in purpple@@
 import pygame<br>
 import cv2<br>
 import subprocess<br>
