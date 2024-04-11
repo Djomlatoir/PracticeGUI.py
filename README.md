@@ -3,11 +3,11 @@
 My Python GUI practice
 ```
 ```js
-import pygame<br>
-import cv2<br>
-import subprocess<br>
-import pygame<br>
-import tkinter<br>
+import pygame
+import cv2
+import subprocess
+import pygame
+import tkinter
 ```
 <br><br>
 
