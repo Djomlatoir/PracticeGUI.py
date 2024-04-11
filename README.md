@@ -9,7 +9,7 @@ import tkinter<br>
 
 
 
-##Instructions for Windows and Pycharm users##
+**Instructions for Windows and Pycharm users**
 
 to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
 
@@ -29,7 +29,7 @@ for listening to music u need to change the path/music in the self.music_folder 
 but be aware of slash key orinetation it needs to be  / this one, example C:/musicapptest/music
 
 
-<u>Instructions for linux</u><br>
+**Instructions for linux**<br>
 
 sudo apt install python3-tk<br>
 
