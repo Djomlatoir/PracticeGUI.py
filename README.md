@@ -6,7 +6,9 @@ import cv2<br>
 import subprocess<br>
 import pygame<br>
 import tkinter<br>
-
+<br><br>
+[import (pygame)]
+<br><br>
 
 
 **Instructions for Windows and Pycharm users**
