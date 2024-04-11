@@ -10,7 +10,7 @@ import tkinter<br>
 
 <br><br>
 
-
+>[!TIP]
 **Instructions for Windows and Pycharm users**
 
 to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
@@ -30,7 +30,7 @@ pip install opencv-python<br>
 for listening to music u need to change the path/music in the self.music_folder = "path/music"  to a desired path with ur music,
 but be aware of slash key orinetation it needs to be  / this one, example C:/musicapptest/music
 
-
+>
 **Instructions for linux**<br>
 
 sudo apt install python3-tk<br>
