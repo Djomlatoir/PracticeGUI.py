@@ -3,11 +3,16 @@
 **My Python GUI practice**
 
 ```js
+import os
+import sys
 import pygame
 import cv2
 import subprocess
 import pygame
-import tkinter
+import tkinter as tk
+from subprocess import call
+from tkinter import filedialog, messagebox
+from PIL import Image, ImageTk
 ```
 <br>
 
