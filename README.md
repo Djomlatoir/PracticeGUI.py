@@ -8,9 +8,9 @@ import pygame
 import tkinter
 
 
----a
-***a
-___a
+#s
+##d
+###sd
 
 
 <u>Instructions for Windows and Pycharm users</u>
