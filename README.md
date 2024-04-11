@@ -9,7 +9,7 @@ import tkinter<br>
 
 
 
-##Instructions for Windows and Pycharm users</u>
+##Instructions for Windows and Pycharm users##
 
 to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
 
