@@ -7,7 +7,7 @@ import subprocess<br>
 import pygame<br>
 import tkinter<br>
 <br><br>
-[import (pygame)]
+> [!IMPORTANT]
 <br><br>
 
 
