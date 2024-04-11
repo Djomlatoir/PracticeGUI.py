@@ -8,7 +8,8 @@ import cv2
 import subprocess
 import pygame
 import tkinter
-```<br>
+```
+<br>
 >[!TIP]
 >**Instructions for Windows and Pycharm users**
 >
