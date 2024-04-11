@@ -11,10 +11,10 @@ import tkinter<br>
 <br><br>
 
 >[!TIP]
-**Instructions for Windows and Pycharm users**
-
-to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
-
+>**Instructions for Windows and Pycharm users**
+>
+>to install interpreters use pip install command or find all the interpreters in the Edit:Settings/Project:projectname/Python Interpreter
+>
 >if u use pip in the terminal use the following commands
 >[!IMPORTANT]
 > Installing TK(tkinter) this is the most important part because interpreters are sometimes installed in diferent directory from your tkinter path 
