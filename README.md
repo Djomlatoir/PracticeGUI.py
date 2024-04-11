@@ -1,13 +1,13 @@
 # PracticeGUI.py
 My Python GUI practice<br>
 used<br>
-<font color=#03fc73>
+<span style="color: green"> Some green text </span>
 import pygame<br>
 import cv2<br>
 import subprocess<br>
 import pygame<br>
 import tkinter<br>
-</font>
+
 <br><br>
 
 <br><br>
