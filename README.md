@@ -1,7 +1,7 @@
 # PracticeGUI.py
-```
+
 **My Python GUI practice**
-```
+
 ```js
 import pygame
 import cv2
