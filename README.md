@@ -10,6 +10,7 @@ import pygame
 import tkinter
 ```
 <br>
+
 >[!TIP]
 >**Instructions for Windows and Pycharm users**
 >
