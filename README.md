@@ -1,6 +1,6 @@
 # PracticeGUI.py
 ```
-My Python GUI practice
+**My Python GUI practice**
 ```
 ```js
 import pygame
