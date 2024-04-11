@@ -1,6 +1,14 @@
+import subprocess
+from subprocess import call
 from tkinter import *
 from tkinter import messagebox
-from subprocess import call
+import sys
+
+def print_python_interpreter():
+    print("Python interpreter path:", sys.executable)
+def open_camera_app():
+    window.destroy()
+    subprocess.call([sys.executable, 'main.py'])
 def open_mainpy_file():
     window.destroy()
     call(["python", "main.py"])
@@ -231,14 +239,18 @@ my_menu = Menu(window)
 window.config(menu=my_menu)
 
 options_menu = Menu(my_menu, tearoff=False)
+main_menu = Menu(my_menu, tearoff=False)
 my_menu.add_cascade(label="Options", menu=options_menu)
+my_menu.add_cascade(label="MainMenu", menu=main_menu)
 options_menu.add_command(label="Reset game", command=reset)
-options_menu.add_command(label="Change game", command=open_mainpy_file)
+main_menu.add_command(label="Main menu", command=open_mainpy_file)
+
+
+
+
 
 
 reset()
-
-
 
 
 window.mainloop() #place window on screen, listen to events
