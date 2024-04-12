@@ -2,6 +2,18 @@
 
 **My Python GUI practice**
 
+## Introduction
+
+This is a Python GUI application created using Tkinter. It offers various functionalities through buttons and allows users to interact with the application easily.
+
+## Features
+
+- **Camera App**: Open a camera application.
+- **Tic-Tac-Toe Game**: Play Tic-Tac-Toe game.
+- **Music App**: Open a music application to play music from your folder.
+- **File Organizer**: Organize, rename, and cleanup files in your directory.
+
+
 ```js
 import os
 import sys
@@ -46,32 +58,4 @@ from tkinter import filedialog
 >sudo apt-get install idle pygame<br>
 >pip install opencv-python
 
-
-# My Python GUI App
-
-![App Screenshot](screenshot.png)
-
-## Introduction
-
-This is a Python GUI application created using Tkinter. It offers various functionalities through buttons and allows users to interact with the application easily.
-
-## Features
-
-- **Camera App**: Open a camera application.
-- **Tic-Tac-Toe Game**: Play Tic-Tac-Toe game.
-- **Music App**: Open a music application to play music from your folder.
-- **File Organizer**: Organize, rename, and cleanup files in your directory.
-
-## Prerequisites
-
-Before running this application, ensure you have the following installed:
-
-- Python (version 3.x)
-- Tkinter library
-
-## Installation
-
-1. Clone this repository to your local machine.
-   ```bash
-   git clone https://github.com/your_username/your_repository.git
 
