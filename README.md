@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This is a Python GUI application created using Tkinter. It offers various functionalities through buttons and allows users to interact with the application easily.
+This is my first Python GUI application created using Tkinter.
 
 ## Features
 
