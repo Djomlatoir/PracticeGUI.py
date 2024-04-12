@@ -6,8 +6,8 @@ import sys
 import tkinter as tk
 import file_organizer
 from tkinter import filedialog
-import pygame
-import threading
+
+
 
 
 
