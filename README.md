@@ -58,8 +58,8 @@ from tkinter import filedialog
 >
 >sudo apt-get install python3-tk<br>
 >sudo apt-get install python3-pip<br>
->pip3 install pygame (replace pip with pip3 if you're using python2)<br> 
->sudo apt-get install python3-opencv
+>pip3 install pygame <br> 
+>sudo apt-get install python3-opencv<br>
 >pip3 install Pillow
 
 
