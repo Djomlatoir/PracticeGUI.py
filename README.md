@@ -2,6 +2,8 @@
 
 **My Python GUI practice**
 
+![App Screenshot](MyAppScreenshot.png)
+
 ## Introduction
 
 This is a Python GUI application created using Tkinter. It offers various functionalities through buttons and allows users to interact with the application easily.
