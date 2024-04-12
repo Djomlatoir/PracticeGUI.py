@@ -56,8 +56,10 @@ from tkinter import filedialog
 >[!TIP]
 >**Instructions for linux**<br>
 >
->sudo apt install python3-tk<br>
->sudo apt-get install idle pygame<br>
->pip install opencv-python
+>sudo apt-get install python3-tk<br>
+>sudo apt-get install python3-pip<br>
+>pip3 install pygame (replace pip with pip3 if you're using python2)<br> 
+>sudo apt-get install python3-opencv
+>pip3 install Pillow
 
 
