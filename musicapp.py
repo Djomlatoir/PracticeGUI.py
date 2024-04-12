@@ -3,12 +3,14 @@ import tkinter as tk
 from subprocess import call
 from tkinter import filedialog, messagebox
 import pygame
+import threading
 
 
 class MusicPlayerApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Music Player")
+        self.root.geometry("500x400")
 
         self.music_list = []
         self.current_index = None
@@ -17,8 +19,8 @@ class MusicPlayerApp:
         pygame.mixer.init()
 
         # Create listbox to display music files
-        self.music_listbox = tk.Listbox(root, width=50, height=20)
-        self.music_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.music_listbox = tk.Listbox(root, width=50, height=20, bd=0, highlightthickness=0)
+        self.music_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=10, pady=10)
         self.music_listbox.bind("<<ListboxSelect>>", self.play_selected_music)
 
         # Create buttons
@@ -39,7 +41,7 @@ class MusicPlayerApp:
         self.root.rowconfigure(0, weight=1)
 
         # Set default music folder
-        self.music_folder = "fath/music"  # Change this to your desired music folder path
+        self.music_folder = "C:/Users/a/PycharmProjects/musicapptest/music"  # Change this to your desired music folder path
         self.load_music_from_folder()
 
     def load_music_from_folder(self):
@@ -75,8 +77,11 @@ class MusicPlayerApp:
         pygame.mixer.music.stop()
 
     def exit_button(self):
-        root.destroy()
-        call(["python", "main.py"])
+        pygame.mixer.music.stop()
+        self.root.quit()
+        self.root.destroy()
+       # root.destroy()
+       # call(["python", "main.py"])
 
     def play_selected_music(self, event):
         selection = self.music_listbox.curselection()
