@@ -6,6 +6,10 @@ import sys
 import tkinter as tk
 import file_organizer
 from tkinter import filedialog
+import pygame
+import threading
+
+
 
 
 def print_python_interpreter():
@@ -20,8 +24,8 @@ def open_camerapy_file():
     window.destroy()
     subprocess.Popen([sys.executable, 'camera.py'])
 def open_musicapp_file():
-    window.destroy()
-    call([sys.executable, 'musicapp.py'])
+  #  window.destroy()
+    subprocess.call([sys.executable, 'musicapp.py'])
 
 def do_something(event):
     label.config(text="You pressed: " + event.keysym)
@@ -45,7 +49,9 @@ window.geometry("600x900")
 window.title("My Cat Gui App")
 window.config(background="#f0f0f0")
 icon = PhotoImage(file='img.png') #taking reference and converting it to icon
-photo = PhotoImage(file='img.png')
+photo = tk.PhotoImage(file='img.png')
+photo_xox= tk.PhotoImage(file='photo_xox.png')
+
 window.iconphoto(True,icon)
 
 label = tk.Label(window, text="Hey! Press Anyy key.", font=('Arial', 30, 'bold'), fg='green', bg='#f0f0f0')
@@ -57,7 +63,8 @@ frame.pack()
 button1 = tk.Button(frame, text="Open Camera App", font=("Arial", 12), command=open_camera_app)
 button1.grid(row=0, column=0, padx=10, pady=10)
 
-button2 = tk.Button(frame, text="Open Tic-Tac-Toe Game", font=("Arial", 12), command=open_ticpy_file)
+
+button2 = tk.Button(frame,image=photo_xox, text="Open Tic-Tac-Toe Game", font=("Arial", 12), command=open_ticpy_file)
 button2.grid(row=0, column=1, padx=10, pady=10)
 
 button3 = tk.Button(frame, text="Open Music App", font=("Arial", 12), command=open_musicapp_file)
@@ -121,6 +128,8 @@ remove_button = tk.Button(window, text="Remove Label", command=remove_label)
 remove_button.pack(side=tk.BOTTOM, padx=10,pady=20)
 
 labels_list =[]
+
+
 
 window.mainloop() #place window on screen, listen to events
 
