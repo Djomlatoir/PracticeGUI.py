@@ -13,6 +13,9 @@ import tkinter as tk
 from subprocess import call
 from tkinter import filedialog, messagebox
 from PIL import Image, ImageTk
+import file_organizer
+from tkinter import filedialog
+
 ```
 <br>
 
